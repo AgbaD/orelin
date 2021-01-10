@@ -1,0 +1,29 @@
+@include media-lg {
+    .menu-btn {
+        visibility: hidden !important;
+    }
+    .nav {
+        visibility: visible !important;
+        float: right !important;
+        background: $primary-color;
+        padding-right: 2rem;
+        padding-top: 1rem;
+        min-width: 100vw !important;
+
+        .menu-nav {
+            display: inline-block;
+            transform: translateX(0) !important;
+            height: 7vh;
+            top: 0;
+            width: 70vw;
+            right: 0;
+            position: absolute;
+            text-align: right !important;
+        
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+        }
+    }
+}
