@@ -1,3 +1,7 @@
+@include media-mdd {
+    
+}
+
 @include media-lg {
     .menu-btn {
         visibility: hidden !important;
@@ -13,6 +17,7 @@
         .menu-nav {
             display: inline-block;
             transform: translateX(0) !important;
+            box-shadow: 2px 1px 7px $secondary-color;
             height: 7vh;
             top: 0;
             width: 70vw;
