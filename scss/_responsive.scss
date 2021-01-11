@@ -1,5 +1,36 @@
 @include media-mdd {
-    
+    .wrapper {
+        
+        & h1 {
+            font-size: 53.7415px !important;
+            font-weight: 700;
+            left: 0px;
+            letter-spacing: -2.77958px !important;
+            line-height: 59.7333px !important;
+            width: 60%;
+        }
+
+        & h4 {
+            font-size: 19.1659px !important;
+            font-weight: 300;
+            letter-spacing: -0.0733141px !important;
+            line-height: 29.5167px !important;
+            width: 60%;
+
+            &.pricee {
+                width: unset;
+            }
+        }
+    }
+    .craze {
+
+        & .card-01 {
+            
+            &:nth-child(3) {
+                margin: auto !important;
+            }
+        }
+    }
 }
 
 @include media-lg {
@@ -17,7 +48,6 @@
         .menu-nav {
             display: inline-block;
             transform: translateX(0) !important;
-            box-shadow: 2px 1px 7px $secondary-color;
             height: 7vh;
             top: 0;
             width: 70vw;
@@ -28,6 +58,25 @@
             &__item {
                 display: inline;
                 padding-right: 1.5rem;
+            }
+        }
+    }
+    .craze {
+
+        & .card-01 {
+            
+            &:nth-child(1) {
+                margin-left: 7% !important;
+                margin-right: 2%;
+            }
+
+            &:nth-child(2) {
+                margin-right: 2%;
+            }
+
+            &:nth-child(3) {
+                margin: 0 2rem !important;
+                margin-top: 4rem !important;
             }
         }
     }

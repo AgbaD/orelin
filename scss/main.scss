@@ -4,6 +4,7 @@
 @import "./menu";
 @import "./responsive";
 @import "./wrapper";
+@import "./mainbody";
 
 body {
     background: $background-color;
@@ -22,7 +23,6 @@ header {
     z-index: 2;
     width: 100%;
     max-height: 30vh !important;
-    box-shadow: 2px 1px 7px $primary-color;
     background: $primary-color;
 }
 

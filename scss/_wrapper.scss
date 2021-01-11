@@ -38,4 +38,29 @@
             box-shadow: 2px 1px 7px $secondary-color;
         }
     }
+
+    & a{
+        color: $background-color;
+        background: $secondary-color;
+        font-size: 19.1659px;
+        font-weight: 300;
+        letter-spacing: -0.0733141px;
+        line-height: 29.5167px;
+        margin-bottom: .7rem;
+        padding: 1rem 1.7rem;
+        border: 1px solid $background-color;
+        border-radius: 5px;
+
+        &.one {
+            background: rgb(97, 160, 33) !important;
+            padding: 1rem !important;
+            border-radius: unset;
+            border: unset;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
 }

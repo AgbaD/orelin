@@ -110,23 +110,20 @@
           transform: translateY(-100vh);
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
+  /*
+        &__item {
+            transform: translateX(100vw);
+            @include transition-ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+        }*/
 }
 
 .nav .menu-nav.open {
   -webkit-transform: translateY(7vh);
           transform: translateY(7vh);
-}
-
-.nav .menu-nav__item {
-  -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
-  -webkit-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
-}
-
-.nav .menu-nav__item.open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
 }
 
 .nav .menu-nav__link {
@@ -176,6 +173,30 @@
           transition-delay: 0.65s;
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper h1 {
+    font-size: 53.7415px !important;
+    font-weight: 700;
+    left: 0px;
+    letter-spacing: -2.77958px !important;
+    line-height: 59.7333px !important;
+    width: 60%;
+  }
+  .wrapper h4 {
+    font-size: 19.1659px !important;
+    font-weight: 300;
+    letter-spacing: -0.0733141px !important;
+    line-height: 29.5167px !important;
+    width: 60%;
+  }
+  .wrapper h4.pricee {
+    width: unset;
+  }
+  .craze .card-01:nth-child(3) {
+    margin: auto !important;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .menu-btn {
     visibility: hidden !important;
@@ -192,8 +213,6 @@
     display: inline-block;
     -webkit-transform: translateX(0) !important;
             transform: translateX(0) !important;
-    -webkit-box-shadow: 2px 1px 7px #222222;
-            box-shadow: 2px 1px 7px #222222;
     height: 7vh;
     top: 0;
     width: 70vw;
@@ -204,6 +223,17 @@
   .nav .menu-nav__item {
     display: inline;
     padding-right: 1.5rem;
+  }
+  .craze .card-01:nth-child(1) {
+    margin-left: 7% !important;
+    margin-right: 2%;
+  }
+  .craze .card-01:nth-child(2) {
+    margin-right: 2%;
+  }
+  .craze .card-01:nth-child(3) {
+    margin: 0 2rem !important;
+    margin-top: 4rem !important;
   }
 }
 
@@ -260,6 +290,89 @@
           box-shadow: 2px 1px 7px #222222;
 }
 
+.wrapper a {
+  color: #ffffff;
+  background: #222222;
+  font-size: 19.1659px;
+  font-weight: 300;
+  letter-spacing: -0.0733141px;
+  line-height: 29.5167px;
+  margin-bottom: .7rem;
+  padding: 1rem 1.7rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.wrapper a.one {
+  background: #61a021 !important;
+  padding: 1rem !important;
+  border-radius: unset;
+  border: unset;
+}
+
+.wrapper a:hover {
+  text-decoration: none;
+}
+
+.major {
+  width: 100vw !important;
+}
+
+.major .craze {
+  position: absolute;
+  top: 100vh;
+  z-index: 5;
+  width: 100%;
+  margin: auto !important;
+}
+
+.major .craze .card-01 {
+  -webkit-box-shadow: 0 0 3px #ccc;
+          box-shadow: 0 0 3px #ccc;
+  border-radius: 7px;
+  padding: 2rem !important;
+  margin: 0 2rem;
+  margin-top: 4rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.major .craze .card-01:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 2px 1px 10px #3b1d84;
+          box-shadow: 2px 1px 10px #3b1d84;
+}
+
+.major .craze .card-01 > i {
+  color: #3b1d84;
+  padding-bottom: .7rem;
+}
+
+.major .craze .card-01 h4 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 13.3px;
+}
+
+.major .craze .card-01 p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 21px;
+}
+
 body {
   background: #ffffff;
   color: #222222;
@@ -277,8 +390,6 @@ header {
   z-index: 2;
   width: 100%;
   max-height: 30vh !important;
-  -webkit-box-shadow: 2px 1px 7px #3b1d84;
-          box-shadow: 2px 1px 7px #3b1d84;
   background: #3b1d84;
 }
 

@@ -1,0 +1,47 @@
+.major {
+    width: 100vw !important;
+
+    .craze {
+        position: absolute;
+        top: 100vh;
+        z-index: 5;
+        width: 100%;
+        margin: auto !important;
+
+        & .card-01 {
+            box-shadow: 0 0 3px #ccc;
+            border-radius: 7px;
+            padding: 2rem !important;
+            margin: 0 2rem;
+            margin-top: 4rem !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 2px 1px 10px $primary-color;
+            }
+
+            & > i {
+                color: $primary-color;
+                padding-bottom: .7rem;
+            }
+
+            & h4 {
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.3px;
+                line-height: 13.3px;
+            }
+
+            & p {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+            line-height: 21px;
+            }
+        }
+    }
+}

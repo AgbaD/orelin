@@ -93,6 +93,7 @@
             transform: translateY(7vh);
         }
 
+        /*
         &__item {
             transform: translateX(100vw);
             @include transition-ease;
@@ -100,7 +101,7 @@
             &.open {
                 transform: translateX(0);
             }
-        }
+        }*/
 
         &__link {
             display: inline-block;
