@@ -100,7 +100,7 @@
 .nav .menu-nav {
   z-index: 3;
   padding-left: 1rem;
-  height: auto;
+  height: 30vh;
   width: 100%;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
@@ -525,6 +525,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 2rem;
 }
 
 .major .footer .col-md-6 li {
