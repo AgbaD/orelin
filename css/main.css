@@ -102,6 +102,8 @@
   padding-left: 1rem;
   height: auto;
   width: 100%;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   overflow: hidden;
   background: #3b1d84;
   list-style-type: none;
@@ -214,6 +216,8 @@
     -webkit-transform: translateX(0) !important;
             transform: translateX(0) !important;
     height: 7vh;
+    border-top: unset !important;
+    border-bottom: unset !important;
     top: 0;
     width: 70vw;
     right: 0;
@@ -234,6 +238,20 @@
   .craze .card-01:nth-child(3) {
     margin: 0 2rem !important;
     margin-top: 4rem !important;
+  }
+  .titlee .col-12 h2 {
+    font-size: 55.2586px !important;
+    font-weight: 200 !important;
+    letter-spacing: -2.61965px !important;
+    line-height: 66.3167px !important;
+  }
+  .convert-img {
+    position: absolute;
+    top: 7vh;
+    right: 0;
+    width: 40vw;
+    padding-top: 3rem;
+    display: unset !important;
   }
 }
 
@@ -312,15 +330,21 @@
 
 .wrapper a:hover {
   text-decoration: none;
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.convert-img {
+  display: none;
 }
 
 .major {
   width: 100vw !important;
+  position: absolute;
+  top: 100vh;
 }
 
 .major .craze {
-  position: absolute;
-  top: 100vh;
   z-index: 5;
   width: 100%;
   margin: auto !important;
@@ -371,6 +395,130 @@
   font-weight: 300;
   letter-spacing: 0.3px;
   line-height: 21px;
+}
+
+.major .titlee {
+  margin-top: 5rem;
+}
+
+.major .titlee .col-12 h2 {
+  font-size: 28.9086px;
+  font-weight: 200;
+  letter-spacing: -1.48632px;
+  line-height: 34.6833px;
+  color: #3b1d84;
+}
+
+.major .titlee .col-12 p {
+  font-size: 16.6492px;
+  font-weight: 300;
+  letter-spacing: -0.0066474px;
+  line-height: 25.6333px;
+}
+
+.major .coins {
+  max-width: 990px;
+  margin: auto;
+  margin-top: 7rem;
+}
+
+.major .coins .col-lg-3 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 2rem !important;
+  padding: 4rem auto !important;
+}
+
+.major .exchange {
+  margin-top: 15rem;
+}
+
+.major .exchange .col-lg-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.major .exchange .col-lg-6 p {
+  font-size: 29.1659px;
+  font-weight: 300;
+  letter-spacing: -1.48632px;
+  line-height: 34.5167px;
+  margin-bottom: 2rem;
+}
+
+.major .exchange .col-lg-6 p.extraa {
+  margin-top: 2rem;
+  font-size: 41.7632px !important;
+  font-weight: 200;
+  letter-spacing: -1.78988px !important;
+  line-height: 54.3px !important;
+  color: #3b1d84;
+}
+
+.major .exchange .col-lg-6 p > a {
+  color: #ffffff;
+  background: #222222;
+  font-size: 19.1659px;
+  font-weight: 300;
+  letter-spacing: -0.0733141px;
+  line-height: 29.5167px;
+  margin-bottom: .7rem;
+  padding: 1rem 1.7rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.major .exchange .col-lg-6 p > a.one {
+  background: #61a021 !important;
+  padding: 1rem !important;
+  border-radius: unset;
+  border: unset;
+}
+
+.major .exchange .col-lg-6 p > a:hover {
+  text-decoration: none;
+  -webkit-transform: translateX(3px);
+          transform: translateX(3px);
+}
+
+.major .footer {
+  margin-top: 11rem;
+  border-top: 1px solid #3b1d84;
+  width: 80%;
+  padding-top: 2rem;
+  color: #3b1d84;
+  margin-bottom: 3rem;
+}
+
+.major .footer .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.major .footer .col-md-6 li {
+  margin: 0 1rem;
+}
+
+.major .footer .col-md-6 li a {
+  color: #3b1d84;
 }
 
 body {

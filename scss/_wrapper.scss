@@ -60,7 +60,11 @@
 
         &:hover {
             text-decoration: none;
+            transform: translateX(3px);
         }
     }
+}
 
+.convert-img {
+    display: none;
 }

@@ -82,6 +82,8 @@
         padding-left: 1rem;
         height: auto;
         width: 100%;
+        border-top: 1px solid $background-color;
+        border-bottom: 1px solid $background-color;
         overflow: hidden;
         background: $primary-color;
         list-style-type: none;

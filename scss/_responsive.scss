@@ -49,6 +49,8 @@
             display: inline-block;
             transform: translateX(0) !important;
             height: 7vh;
+            border-top: unset !important;
+            border-bottom: unset !important;
             top: 0;
             width: 70vw;
             right: 0;
@@ -79,5 +81,26 @@
                 margin-top: 4rem !important;
             }
         }
+    }
+
+    & .titlee {
+        
+        & .col-12 {
+
+            & h2 {
+                font-size: 55.2586px !important;
+                font-weight: 200 !important;
+                letter-spacing: -2.61965px !important;
+                line-height: 66.3167px !important;
+            }
+        }
+    }
+    .convert-img {
+        position: absolute;
+        top: 7vh;
+        right: 0;
+        width: 40vw;
+        padding-top: 3rem;
+        display: unset !important;
     }
 }
