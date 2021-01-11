@@ -1,0 +1,49 @@
+$primary-color: #3b1d84;
+$background-color: #ffffff;
+$secondary-color: #222222;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  @mixin transition-ease {
+    transition: all 0.7s ease-in-out;
+  }
+  
+  @mixin media-sm {
+      @media screen and (min-width: 576px) {
+        @content;
+      }
+  }
+  @mixin media-mdd {
+      @media screen and (min-width: 768px) {
+          @content;
+        }
+  }
+  @mixin media-mds {
+    @media screen and (min-width: 799px) {
+      @content;
+    }
+  }
+  @mixin media-md {
+      @media screen and (min-width: 801px) {
+        @content;
+      }
+  }
+  @mixin media-lg {
+      @media screen and (min-width: 992px) {
+          @content;
+      }
+  }
+  @mixin media-xl {
+      @media screen and (min-width: 1200px) {
+          @content;
+      }
+  }
+  
+  
