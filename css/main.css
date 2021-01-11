@@ -420,6 +420,7 @@
   max-width: 990px;
   margin: auto;
   margin-top: 7rem;
+  border-bottom: 1px solid #3b1d84;
 }
 
 .major .coins .col-lg-3 {
@@ -429,8 +430,21 @@
   padding: 4rem auto !important;
 }
 
+.major .coins .col-lg-3 h5 {
+  color: #61a021;
+}
+
+.major .source {
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.major .source a {
+  color: #3b1d84;
+}
+
 .major .exchange {
-  margin-top: 15rem;
+  margin-top: 5rem;
 }
 
 .major .exchange .col-lg-6 {

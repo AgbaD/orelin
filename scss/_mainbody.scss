@@ -70,18 +70,30 @@
         max-width: 990px;
         margin: auto;
         margin-top: 7rem;
+        border-bottom: 1px solid $primary-color;
 
         & .col-lg-3 {
             width: 80%;
             margin: auto;
             margin-bottom: 2rem !important;
-
             padding: 4rem auto !important;
+
+            & h5 {
+                color: rgb(97, 160, 33);
+            }
+        }
+    }
+    .source {
+        text-align: right;
+        margin-right: 2rem;
+
+        & a {
+            color: $primary-color;
         }
     }
 
     & .exchange {
-        margin-top: 15rem;
+        margin-top: 5rem;
 
         & .col-lg-6 {
             display: flex;
