@@ -1,0 +1,135 @@
+.barner {
+    position: absolute;
+    left: 4vw;
+    top: .4rem;
+    cursor: pointer;
+    @include transition-ease;
+
+    & a {
+        color: $background-color !important;
+        z-index: 3;
+        font-size: 40px;
+    }
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 4;
+    right: 2rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition-ease;
+  
+    &__burger {
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 20px;
+        height: 3px;
+        background: $background-color;
+        @include transition-ease;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: $background-color;
+            @include transition-ease;
+        }
+    
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 28px;
+            height: 3px;
+            background: $background-color;
+            @include transition-ease;
+        }
+    
+        &.open {
+            transform: rotate(180deg);
+            background: transparent;
+    
+            &::before {
+                transform: rotate(45deg) translate(5px, 8px);
+            }
+    
+            &::after {
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+}
+
+.nav {
+    left: 0;
+    top: 3vh;
+    width: 100vw;
+    visibility: hidden;
+    height: 7vh;
+  
+    &.open {
+        visibility: visible;
+    }
+    
+    .menu-nav {
+        z-index: 3;
+        padding-left: 1rem;
+        height: 30vh;
+        width: 100%;
+        border-top: 1px solid $background-color;
+        border-bottom: 1px solid $background-color;
+        overflow: hidden;
+        background: $primary-color;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateY(-100vh);
+        @include transition-ease;
+
+        &.open {
+            transform: translateY(7vh);
+        }
+
+        /*
+        &__item {
+            transform: translateX(100vw);
+            @include transition-ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+        }*/
+
+        &__link {
+            display: inline-block;
+            padding: 1rem 0;
+            color: $background-color;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 400 !important;
+            letter-spacing: 0.3px;
+            line-height: 13.0167px;
+            list-style-image: none;
+            @include transition-ease;
+
+            &:hover{
+                text-decoration: none;
+                border: 1px solid $background-color;
+                border-radius: 5px;
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 5 {
+    .menu-nav__item:nth-child(#{$i}) {
+        transition-delay: ($i * 0.1s) + 0.15s;
+    }
+}

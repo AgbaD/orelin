@@ -1,0 +1,170 @@
+.major {
+    width: 100vw !important;
+    position: absolute;
+    top: 100vh;
+
+    .craze {
+        z-index: 5;
+        width: 100%;
+        margin: auto !important;
+
+        & .card-01 {
+            box-shadow: 0 0 3px #ccc;
+            border-radius: 7px;
+            padding: 2rem !important;
+            margin: 0 2rem;
+            margin-top: 4rem !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 2px 1px 10px $primary-color;
+            }
+
+            & > i {
+                color: $primary-color;
+                padding-bottom: .7rem;
+            }
+
+            & h4 {
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.3px;
+                line-height: 13.3px;
+            }
+
+            & p {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+            line-height: 21px;
+            }
+        }
+    }
+
+    & .titlee {
+        margin-top: 5rem;
+        
+        & .col-12 {
+
+            & h2 {
+                font-size: 28.9086px;
+                font-weight: 200;
+                letter-spacing: -1.48632px;
+                line-height: 34.6833px;
+                color: $primary-color;
+            }
+
+            & p {
+                font-size: 16.6492px;
+                font-weight: 300;
+                letter-spacing: -0.0066474px;
+                line-height: 25.6333px;
+            }
+        }
+    }
+    & .coins {
+        max-width: 990px;
+        margin: auto;
+        margin-top: 7rem;
+        border-bottom: 1px solid $primary-color;
+
+        & .col-lg-3 {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 2rem !important;
+            padding: 4rem auto !important;
+
+            & h5 {
+                color: rgb(97, 160, 33);
+            }
+        }
+    }
+    .source {
+        text-align: right;
+        margin-right: 2rem;
+
+        & a {
+            color: $primary-color;
+        }
+    }
+
+    & .exchange {
+        margin-top: 5rem;
+
+        & .col-lg-6 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & p {
+                font-size: 29.1659px;
+                font-weight: 300;
+                letter-spacing: -1.48632px;
+                line-height: 34.5167px;
+                margin-bottom: 2rem;
+
+                &.extraa {
+                    margin-top: 2rem;
+                    font-size: 41.7632px !important;
+                    font-weight: 200;
+                    letter-spacing: -1.78988px !important;
+                    line-height: 54.3px !important;
+                    color: $primary-color;
+                }
+            }
+            & p > a {
+                color: $background-color;
+                background: $secondary-color;
+                font-size: 19.1659px;
+                font-weight: 300;
+                letter-spacing: -0.0733141px;
+                line-height: 29.5167px;
+                margin-bottom: .7rem;
+                padding: 1rem 1.7rem;
+                border: 1px solid $background-color;
+                border-radius: 5px;
+
+                &.one {
+                    background: rgb(97, 160, 33) !important;
+                    padding: 1rem !important;
+                    border-radius: unset;
+                    border: unset;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    transform: translateX(3px);
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 11rem;
+        border-top: 1px solid $primary-color;
+        width: 80%;
+        padding-top: 2rem;
+        color: $primary-color;
+        margin-bottom: 3rem;
+
+        & .col-md-6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 2rem;
+            
+            & li {
+                margin: 0 1rem;
+
+                & a {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
